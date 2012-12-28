@@ -1,6 +1,6 @@
 library(zoo)
 library(openair)
-times=read.table("/Users/amit/software/TweetGenetics/times.txt", colClasses='character')
+times=read.table("/Users/amit/software/TweetGenetics/times.2012.txt", colClasses='character')
 names(times)=c("datestring", "timestamp", "weekday")
 zoo=read.zoo(times, format="%Y-%d-%m", aggregate=length)
 plos.year <- "2012"
